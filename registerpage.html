@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arimo';
+
+
+
+            background-image: url(css/bgindex.jfif);
+            background-size: cover;
+            /* ปรับขนาดภาพให้ครอบคลุมพื้นที่ทั้งหมด */
+            background-position: center;
+            /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
+            background-repeat: no-repeat;
+            /* ไม่ให้ภาพซ้ำ */
+            /* background-size: 56.57px 56.57px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+
+        hr {
+            background: black;
+        }
+
+        .all-container {
+            display: flex;
+            /* ใช้ flexbox เพื่อจัดให้อยู่ในบรรทัดเดียวกัน */
+            justify-content: space-between;
+            /* จัดระยะห่างระหว่างองค์ประกอบ */
+            align-items: flex-end;
+            /* จัดให้เนื้อหาในแนวตั้งอยู่ตรงกลาง */
+            margin: 0 auto;
+        }
+
+        .container-img {
+            /* transform: translateX(200px); */
+        }
+
+        .container-img img {
+            background: rgba(255, 255, 255, 0.9);
+            max-width: 24.25rem;
+
+            /* width: 90%; */
+            /* max-height: 50%; */
+            max-height: 47.8rem;
+            height: 100%;
+            border-radius: 2rem;
+            /* position: absolute; */
+            margin: 0 auto;
+            /* margin-left: 20rem; */
+
+
+
+
+
+        }
+
+        .container {
+            /* background: rgba(217, 205, 205, 0.874); */
+            background: white;
+            border-radius: 2rem;
+            border-top-right-radius: 0;
+            /* มุมขวาบน */
+            border-bottom-right-radius: 0;
+            padding: 0.7rem 4rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            z-index: 1;
+            /* position: absolute; */
+            transform: translateX(-5rem);
+            margin: 0 auto;
+            /* margin-right: 10rem; */
+
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-family: 'Arimo';
+
+
+
+
+        }
+
+        /* .form-control, .form-check-input {
+            margin-bottom: 15px;
+        } */
+        .form-group p1,
+        label {
+            margin-left: 0.6rem;
+            /* font-weight: 600; */
+
+            font-family: 'Arimo';
+        }
+
+        .form-group input {
+            background-color: #C8C8C8;
+            width: 100%;
+            height: 1.5rem;
+            border-radius: 2rem;
+            font-size: 15px;
+        }
+
+        .display-flex {
+
+            display: flex;
+            justify-content: space-between;
+            /* display: flex;
+            justify-content: center; */
+            gap: 0.6rem;
+            width: 100%;
+
+        }
+
+        .btn-create,
+        .btn-cancel {
+            font-size: 15px;
+            text-align: center;
+            /* width: 50%; */
+            color: black;
+            font-weight: 600;
+            padding: 4px;
+
+        }
+
+        .btn-create {
+
+            background-color: #D3B4FA;
+            border-radius: 3rem;
+            height: 40%;
+
+
+        }
+
+        .btn-cancel {
+            background-color: #F89DBD;
+            border-radius: 3rem;
+            transform: translateY(-23%);
+
+        }
+
+        .btn-back {
+            display: block;
+            text-align: center;
+            margin-top: 4px;
+            text-decoration: underline;
+            color: black;
+
+        }
+
+        #gender {
+
+            /* display: flex; */
+
+
+
+
+
+        }
+
+        .form-check {
+            /* display: flex; */
+            /* flex-direction: column; */
+            margin-right: 70rem;
+
+
+        }
+
+        .form-check input {
+            margin-top: -0.15rem;
+        }
+
+        .form-check-form-check-inline {
+            /* display: flex;
+            flex-direction: column; */
+
+        }
+
+        @media (max-width:1200px) {
+
+            body {
+                height: 120vh;
+            }
+
+            .all-container {
+                /* transform: translateX(-5rem); */
+            }
+
+            .container-img img {
+                margin-left: 0rem;
+            }
+
+            /* .container-img img{
+                height: 100%;
+            } */
+        }
+
+        @media (max-width:1066px) {
+            .all-container {
+                width: 100%;
+                margin-left: 5rem;
+                /* width: 100%;
+                margin-left: 5rem; */
+                /* display: flex;
+            justify-content: center;
+            align-items: center;  */
+            }
+
+            .container-img img {
+                /* margin-left: 10rem; */
+                width: 0px;
+                /* position: absolute; */
+            }
+
+            .container {
+                
+                
+            }
+        }
+
+        @media (max-width:991px) {
+            .container {
+                width: 100%;
+                margin-left: 7rem;
+            }
+        }
+
+        @media (max-width:768px) {
+
+            body {
+                height: 150vh;
+            }
+
+            .all-container {
+                width: 80%;
+                margin-left: 5rem;
+                transform: translateX(0rem);
+
+            }
+        }
+        @media (max-width:617px) {
+            body {
+               /* width: 50rem; */
+
+            }
+            .all-container {
+                width: 80%;
+                margin-left: 0rem;
+              
+
+            }
+
+}
+        @media (max-width:528px) {
+            h2{
+                font-size: 1.5rem;
+            }
+            body {
+                height: 170vh;
+            }
+            .all-container{
+                /* margin-left: 5rem; */
+            }
+            .container {
+                padding: 0.7rem 2rem;
+
+            }
+        }
+
+        @media (max-width:442px) {
+
+            body {
+                height: 120vh;
+                /* overflow-y: hidden; */
+            }
+            .container {
+                padding: 0.7rem 1rem;
+
+            }
+        }
+
+        @media (max-width:352px) {
+
+            body {
+                /* height: 250vh; */
+            }
+        }
+
+        /* @media (max-width:768px){
+   
+   body {
+       height: 130vh;
+   }
+}
+@media (max-width:660px){
+   
+   body {
+       height: 140vh;
+   }
+}
+@media (max-width:594px){
+   
+   body {
+       height: 160vh;
+   }
+}
+@media (max-width:474px){
+   
+   body {
+       height: 180vh;
+   }
+} */
+    </style>
+</head>
+
+<body>
+    <div class="all-container">
+        <div class="container-img">
+            <img src="regsectionpic.png" alt="A beautiful scenery">
+
+        </div>
+        <div class="container">
+            <h2>Create New Account</h2>
+            <hr>
+            <form action="nextpage.html" method="post">
+                <div class="form-group">
+                    <p1>First Name</p1>
+                    <input type="text" class="form-control" name="firstName" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <p1>Last Name</p1>
+                    <input type="text" class="form-control" name="lastName" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <p1>Username</p1>
+                    <input type="text" class="form-control" name="username" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <p1>Password</p1>
+                    <input type="password" class="form-control" name="password" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <p1>Confirm Password</p1>
+                    <input type="password" class="form-control" name="confirmPassword" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <p1>Email</p1>
+                    <input type="email" class="form-control" name="email" placeholder="" required>
+                </div>
+                <div class="form-group" id="gender">
+                    <label>Gender:</label><br>
+                    <div class="form-check">
+                        <div class="form-check-form-check-inline">
+                            <input type="radio" class="form-check-input" name="gender" value="male" required>
+                            <label class="form-check-label">Male</label>
+
+                        </div>
+                        <div class="form-check-form-check-inline">
+                            <input type="radio" class="form-check-input" name="gender" value="female">
+                            <label class="form-check-label">Female</label>
+                        </div>
+                        <div class="form-check-form-check-inline">
+                            <input type="radio" class="form-check-input" name="gender" value="other">
+                            <label class="form-check-label">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Date Of Birth:</label>
+                    <input type="date" class="form-control" name="dob" required>
+                </div>
+                <hr>
+                <div class="display-flex">
+                    <button type="submit" class="btn btn-create btn-block">Create Account</button>
+                    <button type="reset" class="btn btn-cancel btn-block">Cancel</button>
+                </div>
+            </form>
+
+            <a href="./index.html" class="btn-back">Back</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

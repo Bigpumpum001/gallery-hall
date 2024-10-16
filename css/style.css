@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('bgindex.jfif'); /* เปลี่ยนเป็น path ของรูปภาพที่คุณต้องการใช้ */
+    background-size: cover; /* ปรับขนาดภาพให้ครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    
+
+   
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background: #ffffff;
+    border-radius: 10px;
+    padding:  0 0rem 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+/* .image-section .form-section{
+    padding:10rem;
+    font-size: 108px;
+} */
+.image-section {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3rem 0 0 0; */
+    /* padding: 120px 40px; */
+
+}
+.image-section img {
+    max-width: 50%;
+    border-radius: 5px;
+    /* width="300" height="250" */
+}
+.form-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   
+}
+.form-section h2 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #333333;
+    font-family: 'Arimo';
+    /* line-height: 80.49px; */
+}
+.form-section p{
+    color: #8C8C8C; 
+    font-size: 15px;
+    font-family: 'Arimo';
+    font-weight: 400;
+
+}
+/* .form-section input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+} */
+.input-container {
+    display: flex;
+    align-items: center;
+ 
+    
+    padding: 5px;
+    position: relative;
+}
+.input-container input{
+    padding-left: 30px;
+    height: 35px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        outline: none;
+}
+.input-container i{
+    position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: black; /* สีไอคอน Facebook */
+        font-size: 30px;
+}
+.form-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.signin-signup{
+    padding-top: 0.6rem;
+    display: flex;
+    gap:0.6rem;
+    
+
+
+}
+.form-section .signin-button {
+    background-color: #7ee18e;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Arimo';
+    font-weight: 600;
+    width: 50%;
+    border-radius: 2rem;
+    font-size: 20px;
+  
+}
+
+.form-section .signup-button {
+    background-color: #8aaee1;
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Arimo';
+    font-weight: 600;
+    width: 50%;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+.hr-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+
+}
+
+
+.hr-with-text::before,
+.hr-with-text::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.hr-with-text::before {
+    margin-right: 10px;
+}
+
+.hr-with-text::after {
+    margin-left: 10px;
+}
+
+.hr-with-text span {
+    padding: 0 10px; /* ระยะห่างระหว่างข้อความกับเส้น */
+    font-family: 'Arimo';
+    font-weight: 400;
+    font-size: 16px;
+    color: #333; /* สีข้อความ */
+}
+.form-section .google-button {
+    
+    background-color: #ffffff;
+    color: #F97C7C;
+    border: 1px solid #F97C7C;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-family: 'Arimo';
+    font-size: 20px;
+}
+.form-section .google-button:hover {
+    background-color: #dd4b39;
+    color: white;
+    
+}
+.form-section form input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 150%;
+   
+   
+}
+@media (max-width:991px){
+    .image-section img{
+        /* width: 150%; */
+        max-width: 15rem;
+        width: auto;
+        margin-top: 1rem;
+    }
+    .container{
+        display: block;
+    }
+
+}

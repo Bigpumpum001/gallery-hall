@@ -1,0 +1,31 @@
+index - yes
+registerpage - yes
+auction add - yes new 442pxแก้ padding responsive 
+chat - new เหลือ responsive 
+report consider เหลือ reponsive 
+auction - 
+auction-detail เหลือ responsive
+auction-detail-edit เหลือ responsive
+admin-report-consider - responsive
+admin-report-consider-detail - responsive
+admin-news - responsive
+changepassword - responsive
+report-consider - responsive
+
+
+
+แก้ profile 9jnvต่อ
+แก้ navbar
+
+gallery hall ตัด
+
+max-width 1200px 991px 768px 617px
+450px 365px
+@media (max-width:365px){
+    .container-img 
+        {
+            transform: translateX(450px);
+        }
+}
+
+new checklist
